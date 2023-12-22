@@ -1,0 +1,36 @@
+* {
+    font-family: RobotoRegular;
+}
+:root {
+    --first-color: #0d6efd;
+    --second-color: #dc3545;
+    --thrid-color: #954747;
+    --fourth-color: #fd7e14;
+}
+nav {
+    background: linear-gradient(to left, var(--first-color),var(--second-color),var(--fourth-color),var(--thrid-color));
+}
+.header {
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+}
+.header video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background: linear-gradient(to left, var(--first-color),var(--second-color),var(--fourth-color),var(--thrid-color));
+    mix-blend-mode: overlay;
+}
